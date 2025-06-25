@@ -1,23 +1,16 @@
-from random import choice
+a = input('Введите слово менее четырёх букв')
 
-temp = 37.7
-print('Температура', temp,'-это много, это почти', int(temp)+1, '.')
-a=4
-if a == 5:
-    print('а равно 5')
-    print('Условие выполнийлось')
-print('Вне условий')
-print('Витязь на распутье')
-print('Налево (L) пойдешь, вольную-волю обретешь...')
-print('Направо (R) пойдешь, коня потеряешь...')
-print('Прямо (F) пойдешь, сыт и весел будешь...')
-choice = input ('Куда идем (L, R или F): ')
-if choice == 'L' or choice == 'l' :
-    print('вольную-волю обретешь')
-elif choice == 'R' or choice == 'r' :
-    print('коня потеряешь')
-elif choice == 'F' or choice == 'f' :
-    print('сыт и весел будешь')
+if len(a) <= 4:
+    print('слово меньше четырёх букв')
+
 else:
-    print('выбор не ясен')
-print('one')
+    print('слово больше четырех букв')
+
+word = input('Ввведите слово для анализа длинны или словослишком короткое ')
+if not word or len(word) <4 :
+    print('Вы ни чего не ввели')
+if len(word) > 3:
+    print('Длина слова "' + word + '"=' , len(word) )
+
+a = len(str('"Привет"'))
+print(a)
