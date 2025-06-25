@@ -10,7 +10,7 @@ word = input('Ввведите слово для анализа длинны и�
 if not word or len(word) <4 :
     print('Вы ни чего не ввели')
 if len(word) > 3:
-    print('Длина слова "' + word + '"=' , len(word) )
+    print('Длина слова "' + word + '"=' , len(word) )# не имеет значение связка с плюсом или с запятой
 
 a = len(str('"Привет"'))
 print(a)
