@@ -21,3 +21,4 @@ elif choice == 'F' or choice == 'f' :
 else:
     print('выбор не ясен')
 print('one')
+
