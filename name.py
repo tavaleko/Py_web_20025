@@ -16,6 +16,15 @@ elif hour >= 18 and hour <= 22:
     print('добрый вечер.')
 else:
     print('доброй ночи.')
+if 7<= hour  <= 11:
+        print('доброе утро.')
+elif hour >= 12 and hour <= 17:
+        print('добрый день.')
+elif hour >= 18 and hour <= 22:
+        print('добрый вечер.')
+else:
+        print('доброй ночи.')
+
     """
     1. Залогиниться в Github в браузере
     2. Создать нужный репозиторий
@@ -42,3 +51,10 @@ else:
     else:
         print('Выбор не понятен')
         """
+a = 3
+b = 5
+print('до:')
+print('a =', a, 'b =', b)
+temp = a
+a = b
+b = temp
