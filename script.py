@@ -1,24 +1,20 @@
-from random import choice
+name = 'Игорь'
+email = 'aaa@bbb.ru'
+age = 32
+weight = 92.
+# 1 cпособ(плейсхолдеры)
+# %s - string
+# %d - digit (целое число)
+# %f - float
+print('Имя: %s, E-mail: %s, Возраст: %d' % (name, email, age))
 
-temp = 37.7
-print('Температура', temp,'-это много, это почти', int(temp)+1, '.')
-a=4
-if a == 5:
-    print('а равно 5')
-    print('Условие выполнийлось')
-print('Вне условий')
-print('Витязь на распутье')
-print('Налево (L) пойдешь, вольную-волю обретешь...')
-print('Направо (R) пойдешь, коня потеряешь...')
-print('Прямо (F) пойдешь, сыт и весел будешь...')
-choice = input ('Куда идем (L, R или F): ')
-if choice == 'L' or choice == 'l' :
-    print('вольную-волю обретешь')
-elif choice == 'R' or choice == 'r' :
-    print('коня потеряешь')
-elif choice == 'F' or choice == 'f' :
-    print('сыт и весел будешь')
-else:
-    print('выбор не ясен')
-print('one')
+#2 способ
+print('Имя: {}, E-mail: {}, Возраст: {}'.format(name, email,age))
+#3 cспособ
+print(f'Имя: {name}, E-mail: {email}, Возраст: {age}, Вес: {weight:.3f}')
+
+name: Игорь
+email: aaa@bbb.ru
+age: 32
+weight: 92.
 
